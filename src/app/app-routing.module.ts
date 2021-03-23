@@ -48,6 +48,8 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
+  // To enable routing from client side (in case of 404, client will handle and display error-page component)
+  // imports: [RouterModule.forRoot(appRoutes, { useHash: true })],
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule],
 })
